@@ -193,6 +193,7 @@
     <Content Include="Content\CustomContent\CustomCSS\login\login.css" />
     <Content Include="Content\CustomContent\CustomCSS\Mantenimientos\MantenimientoMenu.css" />
     <Content Include="Content\CustomContent\CustomJS\global.js" />
+    <Content Include="Content\CustomContent\CustomJS\Mantenimientos\MantenimientoPuestos.js" />
     <Content Include="Content\CustomContent\CustomJS\Mantenimientos\MantenimientoRoles.js" />
     <Content Include="Content\CustomContent\js\bootstrap.bundle.js" />
     <Content Include="Content\CustomContent\js\bootstrap.bundle.min.js" />
