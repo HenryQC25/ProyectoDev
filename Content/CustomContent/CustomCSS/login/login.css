@@ -1,0 +1,74 @@
+﻿/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Resetting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.contenedor {
+    margin: 25vh auto;
+    padding: 1rem;
+    width: 40vw;
+    height: 50vh;
+    background: #140096;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: #fff;
+    text-align: center; /* Alinea el texto al centro */
+    border-radius: 20px;
+}
+
+#usuario {
+    background: #fff;
+    color: #000000;
+}
+
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    background: #eee;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .contenedor {
+        width: 60vw;
+        height: 55vh;
+        overflow: hidden;
+        padding: 0 10px; /* Agrega un poco de espacio en los bordes */
+    }
+
+    img {
+    }
+}
+
+@media (max-width: 390px) {
+    .contenedor {
+        width: auto;
+        height: 65vh;
+        margin: 40% 25px 25px 25px;
+        overflow: hidden;
+        padding: 0 5px; /* Agrega un poco de espacio en los bordes */
+    }
+
+    button {
+        margin-bottom: 5vh;
+    }
+
+    img {
+        margin-top: -10vh;
+    }
+}

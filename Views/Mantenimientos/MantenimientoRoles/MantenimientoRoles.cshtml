@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewBag.Title = "MantenimientoRoles";
+}
+
+@*<label for="sexo">Sexo</label>
+    <select class="form-control" id="genero" name="genero">
+        <option value="hombre"></option>
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+    </select>*@
+
+
+
+
+
+<select class="form-control" id="listroles" name="listroles">
+</select>
+
+
+<h2>Mantenimiento Roles</h2>
+
+<!--abrir el modal-->
+
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejemploModal">
+    Agregar
+</button>
+<br />
+<br />
+<div class="card m-3 shadow-lg">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table align-middle table-striped table-hover " id="myTable">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre Rol</th>
+                        <th>Descripcion Rol</th>
+                        <th>Fecha Creada</th>
+                        <th>Estatus</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--modal-->
+
+<div class="modal fade" id="ejemploModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Crear Rol</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formulario" method="post">
+
+                    <div class="form-group">
+                        <label for="codigoRol">Código</label>
+                        <input type="text" class="form-control" id="codigoRol" placeholder="codigo" name="codigoRol" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre" placeholder="Nombre" name="Nombre" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Descripcion">Descripción</label>
+                        <input type="text" class="form-control" id="Descripcion" placeholder="Descripcion" name="Descripcion" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fechaCrea">Fecha Crea</label>
+                        <input type="date" class="form-control" id="fechaCrea" placeholder="DD-MM-YYYY" name="fechaCrea" required />
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-dismiss="modal" id="btnAdd" onclick="InsertarRol();">Guardar</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--modal de actualizar-->
+
+<div class="modal fade" id="ejemploModalActualizar" tabindex="-1" aria-labelledby="ejemploModalActualizarLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Actualizar Rol</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formularioActualizar" method="post">
+
+                    <div class="form-group">
+                        <label for="codigoRolActualizar">Código</label>
+                        <input type="text" class="form-control" id="codigoRolActualizar" placeholder="Id" name="codigoRolActualizar" required disabled />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Nombre_actualizar">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre_actualizar" placeholder="Nombre" name="Nombre_actualizar" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="DescripcionActualizar">Descripción</label>
+                        <input type="text" class="form-control" id="DescripcionActualizar" placeholder="Descripción" name="DescripcionActualizar" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fechaCreaActualizar">Fecha de creación</label>
+                        <input type="date" class="form-control" id="fechaCreaActualizar" placeholder="Fecha Creación" name="fechaCreaActualizar" required />
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-dismiss="modal" id="btnAdd" onclick="ActualizarRol();">Guardar</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+<hr />
+
+
+
+<script>
+   
+</script>
+
+
+
+<script src="~/Content/CustomContent/CustomJS/Mantenimientos/MantenimientoRoles.js"></script>
+
