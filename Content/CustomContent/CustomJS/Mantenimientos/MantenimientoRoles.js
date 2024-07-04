@@ -1,7 +1,9 @@
-﻿var dataTable; // Variable global para DataTables
-
+﻿//pruebaewewewee
+//wecwc
+//var dataTable; // Variable global para DataTables
+//otros comentario
 const estatus = "a";
-
+let estado1 = 0;
 $(document).ready(function () {
     ListarRoles(); // Llama a la función para listar los roles al cargar la página
     ListaRoles(); // Llama a la función para llenar el dropdown de roles
